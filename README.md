@@ -20,7 +20,21 @@
 - **OpenAI API** (for content summarization)
 - **spaCy** (for named entity recognition)
 - **Pandas** (for data storage and export)
+- 
+## 📂 Project Structure
 
+This project consists of multiple scripts, each serving a unique purpose:
+
+### 1️⃣ `mckinseyaiscraper.py`
+- Scrapes articles exclusively from the **McKinsey** website.
+- Uses **Selenium** and **BeautifulSoup** to extract article content, metadata, and named entities.
+- Summarizes the extracted content using **OpenAI’s GPT model**.
+- Outputs the results in a structured **CSV file**.
+
+### 2️⃣ `googlenews.py`
+- Allows users to **enter a prompt** in the terminal specifying the type of articles they are looking for.
+- Searches **Google News** for the most relevant articles.
+- Extracts and returns the **top search results** in a CSV file format, including titles, URLs, and summaries.
 ## Installation
 
 ###  Clone the repository
